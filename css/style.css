@@ -1,0 +1,468 @@
+
+/*
+ * FONTS
+ */
+@font-face {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 300;
+    src: local('Open Sans Light'), local('OpenSans-Light'), url('../fonts/opensans/DXI1ORHCpsQm3Vp6mXoaTaRDOzjiPcYnFooOUGCOsRk.woff') format('woff');
+}
+@font-face {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Open Sans'), local('OpenSans'), url('../fonts/opensans/cJZKeOuBrn4kERxqtaUH3bO3LdcAZYWl9Si6vvxL-qU.woff') format('woff');
+}
+@font-face {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 600;
+    src: local('Open Sans Semibold'), local('OpenSans-Semibold'), url('../fonts/opensans/MTP_ySUJH_bn48VBG8sNSqRDOzjiPcYnFooOUGCOsRk.woff') format('woff');
+}
+@font-face {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 700;
+    src: local('Open Sans Bold'), local('OpenSans-Bold'), url('../fonts/opensans/k3k702ZOKiLJc3WVjuplzKRDOzjiPcYnFooOUGCOsRk.woff') format('woff');
+}
+@font-face {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 800;
+    src: local('Open Sans Extrabold'), local('OpenSans-Extrabold'), url('../fonts/opensans/EInbV5DfGHOiMmvb1Xr-hqRDOzjiPcYnFooOUGCOsRk.woff') format('woff');
+}
+@font-face {
+    font-family: 'Open Sans';
+    font-style: italic;
+    font-weight: 300;
+    src: local('Open Sans Light Italic'), local('OpenSansLight-Italic'), url('../fonts/opensans/PRmiXeptR36kaC0GEAetxvR_54zmj3SbGZQh3vCOwvY.woff') format('woff');
+}
+@font-face {
+    font-family: 'Open Sans';
+    font-style: italic;
+    font-weight: 400;
+    src: local('Open Sans Italic'), local('OpenSans-Italic'), url('../fonts/opensans/xjAJXh38I15wypJXxuGMBrrIa-7acMAeDBVuclsi6Gc.woff') format('woff');
+}
+@font-face {
+    font-family: 'Open Sans';
+    font-style: italic;
+    font-weight: 600;
+    src: local('Open Sans Semibold Italic'), local('OpenSans-SemiboldItalic'), url('../fonts/opensans/PRmiXeptR36kaC0GEAetxuw_rQOTGi-AJs5XCWaKIhU.woff') format('woff');
+}
+@font-face {
+    font-family: 'Open Sans';
+    font-style: italic;
+    font-weight: 700;
+    src: local('Open Sans Bold Italic'), local('OpenSans-BoldItalic'), url('..font/opensans/PRmiXeptR36kaC0GEAetxhbnBKKEOwRKgsHDreGcocg.woff') format('woff');
+}
+@font-face {
+    font-family: 'Open Sans';
+    font-style: italic;
+    font-weight: 800;
+    src: local('Open Sans Extrabold Italic'), local('OpenSans-ExtraboldItalic'), url('../fonts/opensans/PRmiXeptR36kaC0GEAetxsBo4hlZyBvkZICS3KpNonM.woff') format('woff');
+}
+
+
+@font-face {
+    font-family: 'icomoon';
+    src:url('../fonts/icomoon/icomoon.eot?ac1ga8');
+    src:url('../fonts/icomoon/icomoon.eot?ac1ga8#iefix') format('embedded-opentype'),
+    url('../fonts/icomoon/icomoon.ttf?ac1ga8') format('truetype'),
+    url('../fonts/icomoon/icomoon.woff?ac1ga8') format('woff'),
+    url('../fonts/icomoon/icomoon.svg?ac1ga8#icomoon') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+    font-family: 'icomoon';
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+    background-color: rgba(51, 102, 204, .8);
+    padding: 5% 5%;
+    text-align: center;
+    font-family: 'Open Sans';
+}
+
+h1 {
+    font-size: 40px;
+}
+
+.inputForm {
+    margin-bottom: 5px;
+}
+
+.newTitle {
+    height: 50px;
+    width: 400px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    padding-left: 10px;
+    font-size: 25px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border: none;
+    border-radius: 5px;
+}
+
+.newContent {
+    height: 350px;
+    width: 400px;
+    overflow: auto;
+    max-height: 350px;
+    max-width: 400px;
+    margin-bottom: 10px;
+    padding-left: 10px;
+    font-size: 25px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    border: none;
+    resize: none;
+}
+
+.submitBtn {
+    height: 50px;
+    width: 150px;
+    font-size: 25px;
+    background-color: white;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border: none;
+    border-radius: 5px;
+}
+
+.alertMsg, .alertMsg-Edit {
+    color: red;
+    font-size: 20px;
+}
+
+.alertMsg-Edit {
+    margin-bottom: 10px;
+}
+
+.hide {
+    display: none;
+}
+
+.noteList {
+    margin-top: 20px;
+}
+
+.noteNode {
+    position: relative;
+    /*width: 500px;*/
+    width: 400px;
+    margin: 10px auto;
+    padding: 0;
+    /*padding-left: 10px;*/
+    border: solid 2px #000;
+    border-radius: 5px;
+    font-size: 25px;
+    background-color: #FFFFCC;
+    line-height: 20px;
+}
+
+.shadow {
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+    height: 100%;
+    background-color: #000000;
+    opacity: 0.5;
+}
+
+.invisible {
+    visibility: hidden;
+
+}
+
+.noteTitle {
+    font-weight: bold;
+    font-size: 25px;
+    margin-top: 0;
+    padding-top: 20px;
+}
+
+.noteTime {
+    font-size: 20px;
+    font-style: italic;
+    color: grey;
+    line-height: 5px;
+    margin-top: -7px;
+}
+
+.noteContent {
+    font-size: 25px;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin: 10px;
+    line-height: 35px;
+}
+
+.icons, .expand {
+    text-align: right;
+    line-height: 30px;
+    padding: 0 10px 10px 0;
+    margin: 0;
+    margin-top: -10px;
+}
+
+.icon-edit:before {
+    content: "\e15e";
+    font-size: 35px;
+}
+
+.icon-delete:before {
+    content: "\e070";
+    font-size: 35px;
+    font-weight: bold;
+}
+
+.icon-collapse:before {
+    content: "\e07f";
+    font-size: 35px;
+    font-weight: bold;
+    margin: 0 5px;
+}
+
+.icon-expand:before {
+    content: "\e069";
+    font-size: 35px;
+    font-weight: bold;
+    margin: 0 5px;
+}
+
+.editForm {
+    margin-bottom: 5px;
+}
+
+.editTitle {
+    height: 50px;
+    width: 85%;
+    margin-bottom: 15px;
+    margin-top: 15px;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-size: 25px;
+    font-weight: bold;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border: solid 2px #000;
+    border-radius: 5px;
+    background-color: #fff;
+}
+
+.editContent {
+    width: 85%;
+    min-height: 200px;
+    margin-bottom: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-size: 25px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    border: solid 2px #000;
+    resize: none;
+    background-color: #fff;
+}
+
+.editBtn, .cancelBtn {
+    height: 50px;
+    width: 110px;
+    font-size: 23px;
+    background-color: white;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border: none;
+    border-radius: 5px;
+    background-color: transparent;
+}
+
+.removeAll {
+    font-size: 20px;
+    color: #fff;
+    /*font-weight: bold;*/
+    text-decoration: underline;
+}
+
+
+/* ----------- Retina Screens (No Retina & Retina)----------- */
+@media screen
+and (min-device-width: 1200px)
+and (max-device-width: 1600px)
+and (-webkit-min-device-pixel-ratio: 1), screen
+and (min-device-width: 1200px)
+and (max-device-width: 1600px)
+and (-webkit-min-device-pixel-ratio: 2)
+and (min-resolution: 192dpi) {
+}
+
+
+/* ----------- Iphone 6+, 6,  ----------- */
+/* Landscape */
+@media only screen
+and (min-device-width: 414px)
+and (max-device-width: 736px)
+and (-webkit-min-device-pixel-ratio: 3)
+and (orientation: landscape), screen
+and (min-device-width: 375px)
+and (max-device-width: 667px)
+and (-webkit-min-device-pixel-ratio: 2)
+and (orientation: landscape), screen
+and (min-device-width: 320px)
+and (max-device-width: 568px)
+and (-webkit-min-device-pixel-ratio: 2)
+and (orientation: landscape), screen
+and (min-device-width: 320px)
+and (max-device-width: 480px)
+and (-webkit-min-device-pixel-ratio: 2)
+and (orientation: landscape) {
+
+    .newTitle {
+        width: 77%;
+    }
+
+    .newContent {
+        height: 200px;
+        width: 80%;
+        max-height: 200px;
+        max-width: 80%;
+    }
+
+    .noteNode {
+        width: 80%;
+        font-size: 25px;
+    }
+}
+
+/* ----------- Portrait ----------- */
+
+@media only screen
+and (min-device-width: 414px)
+and (max-device-width: 736px)
+and (-webkit-min-device-pixel-ratio: 3)
+and (orientation: portrait),screen
+and (min-device-width: 375px)
+and (max-device-width: 667px)
+and (-webkit-min-device-pixel-ratio: 2)
+and (orientation: portrait), screen
+and (min-device-width: 320px)
+and (max-device-width: 568px)
+and (-webkit-min-device-pixel-ratio: 2)
+and (orientation: portrait),screen
+and (min-device-width: 320px)
+and (max-device-width: 480px)
+and (-webkit-min-device-pixel-ratio: 2)
+and (orientation: portrait) {
+
+    .newTitle {
+        height: 35px;
+        width: 76%;
+        font-size: 20px;
+        padding: 0 0 0 10px;
+    }
+
+    .newContent {
+        font-size: 20px;
+        height: 250px;
+        width: 76%;
+        padding: 0 0 0 10px;
+    }
+
+    .submitBtn {
+        height: 35px;
+        width: 100px;
+        font-size: 20px;
+    }
+
+    .noteNode {
+        width: 76%;
+    }
+
+    .noteTitle {
+        font-weight: bold;
+        font-size: 15px;
+        margin-top: 0;
+        padding-top: 20px;
+    }
+
+    .noteTime {
+        font-size: 10px;
+        font-style: italic;
+        color: grey;
+        line-height: 5px;
+        margin-top: -7px;
+    }
+
+    .noteContent {
+        font-size: 15px;
+        padding-left: 20px;
+        padding-right: 20px;
+        margin: 10px;
+        line-height: 35px;
+    }
+
+    .alertMsg {
+        font-size: 15px;
+    }
+
+    .icons {
+        padding: 0;
+        padding-top: 5px;
+    }
+
+    .icon-edit:before {
+        font-size: 27px;
+        margin: 0;
+    }
+
+    .icon-delete:before {
+        font-size: 30px;
+        margin: 0;
+    }
+
+    .icon-collapse:before {
+        font-size: 30px;
+    }
+
+    .icon-expand:before {
+        font-size: 30px;
+    }
+
+    .editTitle {
+        font-size: 20px;
+        width: 77%;
+        height: 30px;
+        margin: 10px 0;
+    }
+
+    .editContent {
+        font-size: 20px;
+        width: 77%;
+    }
+
+    .editBtn, .cancelBtn {
+        font-size: 15px;
+        width: 100px;
+    }
+
+    .removeAll {
+        font-size: 15px;
+    }
+}
+
